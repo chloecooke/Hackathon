@@ -1,4 +1,4 @@
-# 🛰️ DuoShield Beta v0.9
+# DuoShield Beta v0.9
 
 **Advanced Orbital-Threat Detection System for Satellites**
 
@@ -9,20 +9,20 @@ DuoShield is an innovative web-based platform that predicts and visualizes dange
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6.svg)
 ![Three.js](https://img.shields.io/badge/Three.js-r150-black.svg)
 
-## 🌟 Features
+## Features
 
 ### Dual Protection System
 
 DuoShield merges two powerful sub-systems:
 
-#### 🛰 **AZDebrisSentinel**
+#### **AZDebrisSentinel**
 - Monitors satellite conjunctions and debris risks
 - Uses live data from U.S. Space Command / Space-Track
 - Integrates CelesTrak (T.S. Kelso) public TLE data
 - Provides SOCRATES conjunction reports
 - Real-time collision risk alerts
 
-#### ☀️ **AZHelioGuard**
+#### **AZHelioGuard**
 - Tracks solar activity and Coronal Mass Ejection (CME) events
 - Integrates NOAA Space Weather Prediction Center (SWPC) data
 - Uses AWS Open Data Registry for space weather datasets
@@ -36,7 +36,7 @@ DuoShield merges two powerful sub-systems:
 - **Responsive Design**: Optimized for all screen sizes
 - **Smooth Animations**: 60fps performance with Three.js
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18 + TypeScript
 - **3D Graphics**: Three.js with OBJLoader, MTLLoader, GLTFLoader
@@ -45,7 +45,7 @@ DuoShield merges two powerful sub-systems:
 - **Styling**: Modern CSS with glassmorphism effects
 - **Future**: CesiumJS for 3D globe visualization
 
-## 📊 Data Sources
+## Data Sources
 
 1. **[U.S. Space Command / Space-Track](https://www.space-track.org)** - Satellite Catalog and Conjunction Bulletins
 2. **[SpacePolicyOnline](https://spacepolicyonline.com)** - Context and policy updates
@@ -53,7 +53,7 @@ DuoShield merges two powerful sub-systems:
 4. **[NOAA SWPC](https://www.swpc.noaa.gov)** - Space weather forecasts, indices, and alerts
 5. **[AWS Open Data Registry](https://registry.opendata.aws)** - NOAA space weather datasets
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -67,7 +67,7 @@ npm install
 npm run dev
 ```
 
-## 💻 Usage
+## Usage
 
 ```bash
 # Development mode
@@ -85,7 +85,7 @@ npm run lint
 
 Open [http://localhost:5173](http://localhost:5173) to view the application.
 
-## 🎮 How It Works
+## How It Works
 
 DuoShield continuously ingests real-time debris and solar data through various APIs, runs predictive analysis through the AZ Space backend engine, and visualizes threats on an interactive 3D interface. The system provides:
 
@@ -95,7 +95,7 @@ DuoShield continuously ingests real-time debris and solar data through various A
 - **Real-time Monitoring**: Live updates from multiple data sources
 - **Visual Alerts**: 3D visualization of threat zones and safe orbits
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 AZSpaceB/
@@ -118,7 +118,7 @@ AZSpaceB/
 └── README.md
 ```
 
-## 🎨 Features Showcase
+## Features Showcase
 
 - **Transparent Glassmorphism UI**: Modern design with backdrop blur effects
 - **Conditional Background Blur**: Different blur levels for home vs other pages
@@ -126,15 +126,15 @@ AZSpaceB/
 - **Animated Components**: Pulse, shimmer, and fade animations
 - **Optimized Performance**: High-performance rendering with stencil buffer disabled
 
-## 🤝 Contributing
+## Contributing
 
 This project was created for the ANT61 Hackathon. Contributions, issues, and feature requests are welcome!
 
-## 📝 License
+## License
 
 © 2025 AZ Space — Built for AN61 Hackathon Prompt
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - U.S. Space Command for satellite tracking data
 - NOAA Space Weather Prediction Center for solar activity data
@@ -142,7 +142,7 @@ This project was created for the ANT61 Hackathon. Contributions, issues, and fea
 - Three.js community for 3D rendering capabilities
 - NASA for 3D model references
 
-## 📧 Contact
+## Contact
 
 **Michael1384** - [@Michael1384](https://github.com/Michael1384)
 
@@ -150,4 +150,4 @@ Project Link: [https://github.com/Michael1384/AZSpaceB](https://github.com/Micha
 
 ---
 
-⭐ **Star this repository if you find it useful!**
+ **Star this repository if you find it useful!**
