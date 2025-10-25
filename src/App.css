@@ -566,11 +566,29 @@
 }
 
 .subsystem-card.debris {
-  border-color: rgba(100, 200, 255, 0.4);
+  border-color: rgba(100, 180, 255, 0.4);
+}
+
+.subsystem-card.debris:hover {
+  border-color: #4da6ff;
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.6), 0 0 40px rgba(77, 166, 255, 0.3);
+}
+
+.subsystem-card.debris::before {
+  background: linear-gradient(45deg, rgba(77, 166, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(77, 166, 255, 0.1));
 }
 
 .subsystem-card.solar {
   border-color: rgba(255, 180, 100, 0.4);
+}
+
+.subsystem-card.solar:hover {
+  border-color: #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.3);
+}
+
+.subsystem-card.solar::before {
+  background: linear-gradient(45deg, rgba(255, 215, 0, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 215, 0, 0.1));
 }
 
 .subsystem-card:hover {
