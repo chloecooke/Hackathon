@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import ThreeBackground from './components/ThreeBackground'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import WaitingPage from './components/WaitingPage'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       
       <Routes>
+        <Route path="/beta" element={<WaitingPage />} />
         <Route path="/" element={
           <div className="page-wrapper">
             <section id="home" className="hero-section">
@@ -57,7 +59,7 @@ function App() {
                   <p className="duoshield-tagline">
                     Advanced orbital-threat detection system predicting and visualizing dangers for satellites in real-time
                   </p>
-                  <button className="enter-beta-btn">Enter Beta v0.9</button>
+                  <Link to="/beta" className="enter-beta-btn">Enter Beta v0.9</Link>
                 </div>
               </div>
             </section>
@@ -165,7 +167,7 @@ function App() {
                   <p className="duoshield-tagline">
                     Advanced orbital-threat detection system predicting and visualizing dangers for satellites in real-time
                   </p>
-                  <button className="enter-beta-btn">Enter Beta v0.9</button>
+                  <Link to="/beta" className="enter-beta-btn">Enter Beta v0.9</Link>
                 </div>
               </div>
             </section>
