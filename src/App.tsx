@@ -46,12 +46,7 @@ function App() {
                   </div>
 
                   <div className="cta-section">
-                    <button 
-                      className="cta-button primary"
-                      onClick={() => document.getElementById('duoshield')?.scrollIntoView({ behavior: 'smooth' })}
-                    >
-                      Get Started
-                    </button>
+                    <button className="cta-button primary">Get Started</button>
                     <Link to="/features" className="cta-button secondary">Learn More</Link>
                   </div>
                 </main>
@@ -59,7 +54,7 @@ function App() {
             </section>
 
             {/* DuoShield Hero Section */}
-            <section id="duoshield" className="duoshield-hero">
+            <section className="duoshield-hero">
               <div className="container">
                 <div className="hero-content">
                   <h1 className="duoshield-title">DuoShield Beta v0.9</h1>

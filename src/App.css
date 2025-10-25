@@ -711,9 +711,20 @@
 /* Features Page Styles */
 .features-page {
   min-height: 100vh;
-  padding: 6rem 0;
-  background: linear-gradient(135deg, #0f0c29, #1a1a2e);
+  padding: 8rem 0 4rem;
   color: #fff;
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.features-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .features-title {
@@ -724,6 +735,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -1px;
+  font-weight: 700;
 }
 
 .features-subtitle {
@@ -731,32 +744,69 @@
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 4rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 .features-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 2rem;
-}
-
-@media (max-width: 768px) {
-  .features-container {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-  }
 }
 
 .feature-item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(10, 10, 26, 0.7);
+  border: 1px solid rgba(100, 108, 255, 0.2);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2.5rem;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.feature-item:hover {
+  border-color: rgba(100, 108, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(100, 108, 255, 0.15);
+}
+
+.feature-number {
+  display: none; /* Hide the number circles */
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.feature-item p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .features-page {
+    padding: 6rem 0 3rem;
+  }
+  
+  .features-title {
+    font-size: 2.5rem;
+  }
+  
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-item {
+    padding: 1.5rem;
+  }
 }
 
 .feature-item:hover {
