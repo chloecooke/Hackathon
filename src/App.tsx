@@ -4,6 +4,7 @@ import ThreeBackground from './components/ThreeBackground'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import WaitingPage from './components/WaitingPage'
+import FeaturesPage from './components/FeaturesPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       
       <Routes>
         <Route path="/beta" element={<WaitingPage />} />
+        <Route path="/features" element={<FeaturesPage />} />
         <Route path="/" element={
           <div className="page-wrapper">
             <section id="home" className="hero-section">
@@ -45,7 +47,7 @@ function App() {
 
                   <div className="cta-section">
                     <button className="cta-button primary">Get Started</button>
-                    <button className="cta-button secondary">Learn More</button>
+                    <Link to="/features" className="cta-button secondary">Learn More</Link>
                   </div>
                 </main>
               </div>
