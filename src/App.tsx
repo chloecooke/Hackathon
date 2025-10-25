@@ -46,7 +46,17 @@ function App() {
                   </div>
 
                   <div className="cta-section">
-                    <button className="cta-button primary">Get Started</button>
+                    <button 
+                      className="cta-button primary"
+                      onClick={() => {
+                        const duoShieldSection = document.querySelector('.duoshield-hero');
+                        if (duoShieldSection) {
+                          duoShieldSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                      }}
+                    >
+                      Get Started
+                    </button>
                     <Link to="/features" className="cta-button secondary">Learn More</Link>
                   </div>
                 </main>
